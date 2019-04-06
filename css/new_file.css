@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+body{
+	background: tomato;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.first{
+	overflow: hidden;
+}
+
+.first h1{
+	background: #A51937 !important;
+	text-align: center;
+	color: white;
+	padding: 20px 0;
+	font-weight: normal;
+	font-size: 32px;
+	margin-bottom: 2px;
+}
+
+.first section{
+	background: white;
+	float: left;
+	width: 238px;
+	/*或者
+	 * box-sizing: border-box;最多占%20,IE不太支持
+	border: 1px solid tomato;*/
+	margin: 1px;
+	height: 315px;
+}
+
+.image{
+	position: relative;
+	height: 238px;
+}
+
+.image article img{
+	width: 229px;
+	height:229px;
+}
+
+.inner aside img{
+	width: 25px;
+	height:25px;
+}
+
+.image article, .image aside{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.inner article{
+	padding: 0 9px;
+	width: 220px;
+	
+}
+
+.inner article p{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.inner article p a{
+	color: black;
+}
+
+.inner p+p{
+	color: gray;
+}
+
+.inner p+p+p{
+	color: tomato;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.zhushi{
+	margin-top: 6px;	
+}
+
+/*.zhushi span{
+	border: 1px dotted red;
+	padding: 1px 3px;
+	margin-right: 5px;
+}*/
+
+.inner article button{
+	background: red;
+	color: white;
+	border: white;
+	font-size: 14px;
+	padding: 0px 12px;
+	font-weight: normal;
+	line-height: 30px;
+	margin-left: 70px;
+}
+
+
+
+.inner article p:last-child{
+	
+}
